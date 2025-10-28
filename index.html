@@ -1,0 +1,361 @@
+    <html>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+HU:wght@100..400&family=Playwrite+PL:wght@100..400&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount:wght@100..900&family=Dancing+Script:wght@400..700&family=Goldman:wght@400;700&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+HU:wght@100..400&family=Playwrite+PL:wght@100..400&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount:wght@100..900&family=Bungee&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Goldman:wght@400;700&family=Gravitas+One&family=Lobster&family=Pacifico&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+HU:wght@100..400&family=Playwrite+PL:wght@100..400&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">      
+        <style>
+            body {
+              background-color:gray;
+                  margin: 0;
+                  font-family: Arial, sans-serif;
+                 }
+            nav {
+                  background-color: #333;
+                  color: white;
+                  padding: 10px 20px;
+                  position: relative;
+            }        
+            .nav-links {
+                  display: none;
+                  flex-direction: column;
+                  background-color: #444;
+            }
+            .nav-links a {
+                  color: white;
+                  text-decoration: none;
+                  padding: 12px 20px;
+                  border-top: 1px solid #555;
+                }
+              #menu-toggle {
+                display: none;
+              }
+              .hamburger {
+                display: block;
+                cursor: pointer;
+                width: 30px;
+              }
+              .hamburger span {
+                display: block;
+                height: 3px;
+                margin: 5px 0;
+                background-color: white;
+              }
+              #menu-toggle:checked + .hamburger + .nav-links {
+                display: flex;
+              }
+                @media (min-width: 768px) {
+                  .hamburger {
+                    display: none;
+                  }
+                  .nav-links {
+                    display: flex ;
+                    flex-direction: row;
+                    background: none;
+                  }
+                  .nav-links a {
+                    border: none;
+                  }
+                }
+              .milky{
+                position: relative;
+                animation: duration 2s;
+                animation-name:anime;
+                animation-iteration-count:infinite ;
+                transition-duration:5s;
+                transition-delay:2s;
+               }
+                 @keyframes anime{
+                0%{
+                    left:0px;  
+                }
+                20%{
+                    left:100px; 
+                }
+                40%{
+                    left:200px; 
+                }
+                60%{
+                    left:400px;     
+                }
+                80%{
+                    left:600px;  
+                }
+                100%{
+                    left:800px; 
+                }
+              }
+              .milky h1{
+                  color:black;
+                  margin-left:200px;
+                  font-family: "DM Serif Display", serif;
+                 font-weight:0;
+                 font-style: normal;
+               }
+               .milky img{
+                  height: 400px;
+                  width:700px;
+               }
+            .world{
+                display: flex;
+            }
+         .div1{ 
+                width: 400px;
+                height:890px;
+                background:linear-gradient(rgb(169, 165, 165),darkgrey,gray);
+                box-shadow:10px 10px 10px 10px darkgrey;
+                margin:50px;
+            } 
+            .div1 p{
+                color:black;
+                text-align: justify;
+                font-family: "Playwrite HU", cursive;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+            }
+            .div1 h2{
+                margin-left:150px;
+            }
+           .div1 img{
+                height:350px;
+                width:350px;
+                padding:10px 10px 5px 30px;
+           }
+           .div2{
+                width:400px;
+                height:890px;
+                background:linear-gradient(rgb(63, 109, 183),rgb(69, 77, 91),rgb(46, 88, 155));
+                box-shadow: 10px 10px 10px 10px rgb(52, 80, 132);
+                margin:50px;
+             }
+             .div2 p{
+                color:rgb(251, 246, 246);
+                text-align: justify;
+                font-family: "Playwrite AU NSW", cursive;
+                font-optical-sizing: auto;
+                font-weight:weight;
+                font-style: normal; 
+             }
+             .div2 h2{
+                   margin-left:150px;
+             }
+             .div2 img{
+                height:350px;
+                width:350px;
+                padding:10PX 10PX 5PX 30PX;
+             }
+             .div3{  
+                width:400px; 
+                height:890px;
+                background:linear-gradient(rgb(255,70, 0),rgb(253, 18, 18),rgb(255,70,0));
+                box-shadow: 10px 10px 10px 10px rgb(255, 70,0);
+                margin:50px; 
+             }  
+             .div3 p{
+                color:black;
+                text-align: justify;
+                font-family: "Playwrite PL", cursive;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+             }
+             .div3 h2{
+                  margin-left:150px;
+             }
+             .div3 img{
+                height:350px;
+                width:350px;
+                padding: 10px 10px 5px 30px;
+             }
+              .earth{
+                background-color:skyblue;
+                display: inline;
+             }
+             .earth img{
+               height:400px;
+               width:500px;
+               padding:5px 5px 5px 10px;
+               float: left;
+             }
+              .earth h1{
+               color:white;
+               text-align: center;
+               margin-top:50px;
+             }
+             .earth p{
+               color: white;
+               margin:0px 0px 100px 50px;
+               width:900px; 
+               text-align: justify;
+               font-family: "DM Serif Display", serif;
+               font-weight: 400;
+               font-style: normal;
+               float: left; 
+             }
+              .planet{
+                display: inline; 
+             }
+             .planet img{
+               background-color: black;
+               margin:10PX 5PX 0PX 0PX;
+               height:400px;
+               width:500px;
+               padding:5px 5px 5px 10px;
+               float: right;
+             }
+              .planet h1{
+                color: white;
+                text-align:left;
+                margin:50px 0px 0px 400px;
+              }
+             .planet p{
+               color: white; 
+               width:900px; 
+               margin:50px 50px 10px 50px;
+               text-align: justify;
+               font-family: "DM Serif Display", serif;
+               font-weight: 400;
+               font-style: normal;
+               float:right; 
+             }
+             .footer{
+                  width: 100%;
+                  height: 300px;
+                  color:black;
+                  margin:500px 0px 0px 650px;
+                  }
+              .footerbox{
+                  height:200px;
+                  width: 200px;
+                  margin: 100px 0px 0px 650PX;
+                  }
+            </style>
+             <body>
+                 <nav>
+            <input type="checkbox" id="menu-toggle" />
+            <label class="hamburger" for="menu-toggle">
+                     <span></span>
+                    <span></span>
+                    <span></span>
+              </label>
+            <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">SEARCH</a>
+            <a href="#">GALAXY</a>
+           <a href="#">ANIME</a>
+           <a href="#">HORROR</a>
+           <a href="#">ABOUT</a>
+            </div>
+            </nav>
+               <div class="milky">
+                  <h1>MILKY WAY GALAXY</h1>
+                  <img src="milky.jpeg">
+               </div>
+                 <div class="world">
+                <div class="div1">
+                    <h2> MOON</h2>
+                    <img src="full moon.jpeg">
+                        <p>
+                         The Moon formed around 4.5 billion years ago, likely as a result of a massive 
+                         collision between Earth and a Mars-sized body called Theia. The debris from this
+                         impact eventually came together to form the Moon. In its early history,The Moon was 
+                         volcanically active, and its surface was heavily bombarded by asteroids,creating the
+                         many craters we see today. Over time, the Moon’s gravitational pull has played a keyrole
+                         in stabilizing Earth’s tilt and creating ocean tides.It has remained a constant presence
+                         in our sky.first visited by humans during the Apollo 11 mission in 1969.
+                        </p>
+                </div>   
+                     <div class="div2">
+                        <h2>STARS</h2>
+                        <img src="gg.jpeg.jpg">
+                        <p>
+                         Stars began forming over 13 billion years ago, shortly after the Big Bang, from vast
+                         clouds of gas and dust in space. Gravity caused these clouds to collapse, increasing
+                         pressure and temperature until nuclear fusion ignited in their cores. This fusion process,
+                         where hydrogen turns into helium, powers stars and produces the light and heat they emit.
+                         Over their lifetimes,stars create heavier elements and influence the formation of planets 
+                         and galaxies.They die,depending on their size,they may become white dwarfs,neutron stars,
+                         or black holes,continuing to shape the universe long after their light fades.
+                        </p>
+                     </div>     
+                         <div class="div3">
+                        <h2>SUN</h2>
+                        <img src="sun.jpeg">
+                        <p>
+                         The Sun formed about 4.6 billion years ago from a giant cloud of gas and dust in space,
+                         known as a solar nebula. Gravity pulled most of this material to the center, where intense
+                         pressure and heat triggered nuclear fusion, turning hydrogen into helium and releasing 
+                         massive energy. This process continues today, making the Sun the main source of light and
+                         heat for our solar system. Over billions of years, the Sun has remained stable, supporting
+                         life on Earth. In the distant future, it will expand into a red giant and eventually shrink 
+                         a white dwarf, marking the end of its life cycle.
+                        </p>
+                     </div>
+                     </div>  
+                     <div class="earth">
+                        <img src="earth.jpeg">
+                        <h1>EARTH</h1>
+                        <p>
+                        Earth's history spans approximately 4.5 billion years, beginning with its formation from a massive cloud 
+                        of gas and dust left over from the birth of the Sun. Through a process called accretion, particles collided
+                        and merged, gradually forming a planet. In its early stages, Earth was a molten sphere, but as it cooled,
+                        a solid crust formed on the surface. Intense volcanic activity released gases, which helped create the early 
+                        atmosphere. Water vapor condensed to form oceans, making Earth one of the only known planets capable of
+                        supporting life. Life is thought to have first appeared in the oceans around 3.8 billion years ago as 
+                        microscopic, single-celled organisms. Over the next few billion years, these simple life forms evolved into 
+                        more complex organisms through the process of natural selection. Major evolutionary milestones include the
+                        development of photosynthesis, which added oxygen to the atmosphere, and the emergence of multicellular organisms. 
+                        Around 541 million years ago, during the Cambrian Explosion, a remarkable diversification of life occurred,
+                        giving rise to many of the major animal groups we know today. Earth has also experienced several mass extinctions,
+                        such as the one that wiped out the dinosaurs about 66 million years ago, likely due to an asteroid impact.
+                        Each extinction event reshaped life on the planet and allowed new species to evolve. Geological processes
+                        like plate tectonics have continuously altered the continents and ocean basins, shaping Earth’s surface over
+                        time. Human beings appeared relatively recently, about 300,000 years ago, and have since significantly influenced
+                        the planet's ecosystems and climate. Earth's history is a story of constant change, driven by both natural forces
+                        and the life that has evolved upon it.
+                        </p>
+                      </div>
+                     <div class="planet">
+                      <h1>PLANET</h1>
+                        <img src="planet.jpeg">
+                        <P>
+                        The history of the planets in our solar system is a vast and complex story that began over 4.6 billion years ago,
+                        when a massive cloud of gas and dust—known as the solar nebula—collapsed under its own gravity, possibly triggered 
+                        by a nearby supernova. At the center of this collapsing cloud, the Sun was born, and around it, the remaining
+                        material flattened into a spinning protoplanetary disk. From this disk, the planets gradually formed through a process
+                        called accretion, where dust particles stuck together to form planetesimals, which collided and merged to become 
+                        protoplanets. The four inner planets—Mercury, Venus, Earth, and Mars—formed from heavier elements and became rocky 
+                        due to the intense heat near the Sun. Farther out, the gas giants—Jupiter and Saturn—accumulated massive envelopes 
+                        of hydrogen and helium, while the ice giants—Uranus and Neptune—formed in colder regions and incorporated more ices
+                        like water, ammonia, and methane. Each planet developed its own unique characteristics through interactions with the
+                        Sun, collisions with other bodies, and dynamic internal processes. For example, Earth's geological activity and water 
+                        enabled the emergence of life, while Mars experienced massive climate changes that may have once supported water on
+                        its surface. Jupiter’s immense gravity influenced the orbits of many bodies, even shaping the asteroid belt, and may
+                        have shielded Earth from excessive asteroid impacts. Over billions of years, planetary migration, bombardments 
+                        (such as the Late Heavy Bombardment), and internal evolution (like volcanism, tectonics, and magnetic fields) have
+                        all shaped the solar system into what we observe today. Despite our advanced understanding, many mysteries remain about
+                        the planets’ early development and their long-term evolution, making planetary history an ongoing subject of exploration 
+                        and discovery.
+                        </P>
+                        </div>
+                      <div class="footer">
+                          <h1>MOONLIGHT ARTICLE</h1>
+                          <h3><strong>Moonlight article<br>
+                              E-MAIL: moonlight07@gmail.com<br>
+                              P.NO:9999999999<br>
+                              ADDRESS:5TH STREET,CHINGMAI.<br>
+                              CITY:BANGKOK CITY<br>
+                              COUNTRY:THAILAND<br>
+                          </h3></strong>
+                          <h2 class="footerbox">
+                           <b> <button click="footerbox">VISIT PAGE </b></h2>
+                     </div> 
+                        </body>
+                    </html>
+                        
